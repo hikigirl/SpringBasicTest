@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean class="com.test.java.di04.Hong" id="hong" name="student, obj, dao"></bean>
+	<!-- name 속성은 일종의 alias, 별명. 유연한 코드를 위해 사용함 -->
+	
+	<bean class="com.test.java.di04.Lee" id="lee"></bean>
+	<!-- <bean class="com.test.java.di04.Service" id="service">
+		<constructor-arg>
+			<bean class="com.test.java.di04.Lee"></bean>
+		</constructor-arg>
+	</bean> -->
+	<!-- 생성자를 통한 의존 주입 -->
+	<!-- <bean class="com.test.java.di04.Service" id="service">
+		<constructor-arg ref="hong" />
+	</bean> -->
+	
+	<!-- setter를 통한 의존 주입 -->
+	<bean class="com.test.java.di04.Service" id="service">
+		<property name="employee" ref="lee"></property>
+		<!-- employee라고 적어두면 setEmployee로 스프링이 알아서 처리.. -->
+	</bean>
+	
+</beans>
