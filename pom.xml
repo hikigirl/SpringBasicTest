@@ -125,7 +125,19 @@
 			<artifactId>lombok</artifactId>
 			<version>1.18.40</version>
 		</dependency>
+		<!-- AOP 관련 -->
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjrt</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
 
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${org.aspectj-version}</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<plugins>
