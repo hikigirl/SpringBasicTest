@@ -1,15 +1,15 @@
 package com.test.java.aop;
 
 public interface Memo {
-	//¸Ş¸ğ ¾²±â
+	//ë©”ëª¨ ì“°ê¸°
 	void memo_add(String memo);
 	
-	//¸Ş¸ğ ÀĞ±â
+	//ë©”ëª¨ ì½ê¸°
 	String memo_read(String seq) throws Exception;
 	
-	//¸Ş¸ğ ¼öÁ¤
+	//ë©”ëª¨ ìˆ˜ì •
 	boolean edit(String seq, String memo);
 	
-	//¸Ş¸ğ »èÁ¦
+	//ë©”ëª¨ ì‚­ì œ
 	boolean del(String seq);
 }

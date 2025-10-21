@@ -3,7 +3,7 @@ package com.test.java.di02;
 public class Main {
 	public static void main(String[] args) {
 		
-		System.out.println("»çÀå¾÷¹«1");
+		System.out.println("ì‚¬ìž¥ì—…ë¬´1");
 
 		
 		//Hong
@@ -16,7 +16,7 @@ public class Main {
 		service2.doSomething();
 		
 		
-		System.out.println("»çÀå¾÷¹«2");
+		System.out.println("ì‚¬ìž¥ì—…ë¬´2");
 		
 	}
 }

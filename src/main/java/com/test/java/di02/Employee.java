@@ -1,7 +1,7 @@
 package com.test.java.di02;
 
 public interface Employee {
-	//Á÷¿øÀÌ ÇÒ Çàµ¿(interface)
-	//È«±æµ¿ or ÀÌ¼ø½Å -> °¢°¢ÀÇ °³ÀÎÀÌ ¾Æ´Ñ Á÷¿ø(Employee)·Î¼­ ÇØ¾ßÇÒ ÀÏ Á¤ÀÇ
+	//ì§ì›ì´ í•  í–‰ë™(interface)
+	//í™ê¸¸ë™ or ì´ìˆœì‹  -> ê°ê°ì˜ ê°œì¸ì´ ì•„ë‹Œ ì§ì›(Employee)ë¡œì„œ í•´ì•¼í•  ì¼ ì •ì˜
 	void work();
 }

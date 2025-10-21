@@ -4,30 +4,30 @@ import java.util.Calendar;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 
-//º¸Á¶ ¾÷¹« -> ·Î±× ±â·Ï
+//ë³´ì¡° ì—…ë¬´ -> ë¡œê·¸ ê¸°ë¡
 public class Logger {
-	//º¸Á¶ ¾÷¹« ±¸Çö
+	//ë³´ì¡° ì—…ë¬´ êµ¬í˜„
 	public void log() {
 		Calendar now = Calendar.getInstance();
-		System.out.printf("[%tF %tT] ·Î±×¸¦ ±â·ÏÇÕ´Ï´Ù.\n", now, now);
+		System.out.printf("[%tF %tT] ë¡œê·¸ë¥¼ ê¸°ë¡í•©ë‹ˆë‹¤.\n", now, now);
 	}
 	
-	//around advice¿¡ »ç¿ëÇÒ ¸Ş¼­µå Ãß°¡±¸Çö
+	//around adviceì— ì‚¬ìš©í•  ë©”ì„œë“œ ì¶”ê°€êµ¬í˜„
 	public void around(ProceedingJoinPoint jp) {
-		//Æ¯Á¤ ¾÷¹«°¡ ½ÇÇàµÇ´Â ¼Ò¿ä ½Ã°£
-		System.out.println("ÁÖ ¾÷¹« ½ÃÀÛ Àü");
+		//íŠ¹ì • ì—…ë¬´ê°€ ì‹¤í–‰ë˜ëŠ” ì†Œìš” ì‹œê°„
+		System.out.println("ì£¼ ì—…ë¬´ ì‹œì‘ ì „");
 		long begin = System.nanoTime();
 		
-		//ÁÖ ¾÷¹« ½ÇÇà
-		// -> ÇÁ·Ï½Ã °´Ã¼(Proxy Object) => jp
+		//ì£¼ ì—…ë¬´ ì‹¤í–‰
+		// -> í”„ë¡ì‹œ ê°ì²´(Proxy Object) => jp
 		try {
 			jp.proceed();
 		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		
-		//System.out.println("ÁÖ ¾÷¹« Á¾·á Á÷ÈÄ");
+		//System.out.println("ì£¼ ì—…ë¬´ ì¢…ë£Œ ì§í›„");
 		long end = System.nanoTime();
-		System.out.println("¼Ò¿ä½Ã°£: " + (end-begin) + "ns");
+		System.out.println("ì†Œìš”ì‹œê°„: " + (end-begin) + "ns");
 	}
 }

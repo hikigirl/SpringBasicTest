@@ -4,26 +4,26 @@ public class MemoImpl implements Memo {
 
 	@Override
 	public void memo_add(String memo) {
-		System.out.println("¸Ş¸ğ ¾²±â: " + memo);
+		System.out.println("ë©”ëª¨ ì“°ê¸°: " + memo);
 	}
 
 	@Override
 	public String memo_read(String seq) throws Exception {
-		if (seq.equals("1")) return "¾È³çÇÏ¼¼¿ä";
-		else if (seq.equals("2")) return "È«±æµ¿ÀÔ´Ï´Ù.";
-		else if (seq.equals("3")) return "¸Ş¸ğ Å×½ºÆ®";
-		else throw new Exception("Á¸ÀçÇÏÁö ¾Ê´Â ¸Ş¸ğ");
+		if (seq.equals("1")) return "ì•ˆë…•í•˜ì„¸ìš”";
+		else if (seq.equals("2")) return "í™ê¸¸ë™ì…ë‹ˆë‹¤.";
+		else if (seq.equals("3")) return "ë©”ëª¨ í…ŒìŠ¤íŠ¸";
+		else throw new Exception("ì¡´ì¬í•˜ì§€ ì•ŠëŠ” ë©”ëª¨");
 	}
 
 	@Override
 	public boolean edit(String seq, String memo) {
-		System.out.println("¸Ş¸ğ ¼öÁ¤: " + memo);
+		System.out.println("ë©”ëª¨ ìˆ˜ì •: " + memo);
 		return true;
 	}
 
 	@Override
 	public boolean del(String seq) {
-		System.out.println("¸Ş¸ğ »èÁ¦: " + seq);
+		System.out.println("ë©”ëª¨ ì‚­ì œ: " + seq);
 		return true;
 	}
 	

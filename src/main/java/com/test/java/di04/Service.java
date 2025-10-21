@@ -5,18 +5,18 @@ public class Service {
 	private Employee employee;
 	
 	
-//	public Service(Employee employee) { //»ı¼ºÀÚ ÀÇÁ¸ ÁÖÀÔ µµ±¸
+//	public Service(Employee employee) { //ìƒì„±ì ì˜ì¡´ ì£¼ì… ë„êµ¬
 //		this.employee = employee;
 //	}
 	
-	//setter¸¦ ÀÌ¿ëÇÑ ÀÇÁ¸ ÁÖÀÔ
+	//setterë¥¼ ì´ìš©í•œ ì˜ì¡´ ì£¼ì…
 	public void setEmployee(Employee employee) {
 		this.employee = employee;
 	}
 	
 	public void doSomething() {
-		//¼­ºñ½º ÀÚ½ÅÀÇ ¾÷¹«
-		System.out.println("ÀÚ·á¸¦ ÃëÇÕ");
+		//ì„œë¹„ìŠ¤ ìì‹ ì˜ ì—…ë¬´
+		System.out.println("ìë£Œë¥¼ ì·¨í•©");
 
 		//DI
 		//hong.work();
@@ -24,8 +24,8 @@ public class Service {
 		employee.work();
 		
 		
-		//¼­ºñ½º ÀÚ½ÅÀÇ ¾÷¹«
-		System.out.println("ÀÚ·á¸¦ Àü¼Û");
+		//ì„œë¹„ìŠ¤ ìì‹ ì˜ ì—…ë¬´
+		System.out.println("ìë£Œë¥¼ ì „ì†¡");
 	}
 
 

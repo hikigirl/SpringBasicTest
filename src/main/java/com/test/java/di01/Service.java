@@ -2,14 +2,14 @@ package com.test.java.di01;
 
 public class Service {
 	
-	//1. DI ÆĞÅÏ - ÀÇÁ¸ °´Ã¼¸¦ ´ãÀ» ¸â¹ö º¯¼ö¸¦ ¼±¾ğÇÑ´Ù.
+	//1. DI íŒ¨í„´ - ì˜ì¡´ ê°ì²´ë¥¼ ë‹´ì„ ë©¤ë²„ ë³€ìˆ˜ë¥¼ ì„ ì–¸í•œë‹¤.
 	private Hong hong;
 	private Lee lee;
 	
-	//2. DI ÆĞÅÏ - ÀÇÁ¸ °´Ã¼¸¦ ÁÖÀÔ¹Ş´Â´Ù. 
-	//			 - ÀÇÁ¸ ÁÖÀÔ µµ±¸¸¦ ¼±¾ğÇÑ´Ù.(»ı¼ºÀÚ or setter)
+	//2. DI íŒ¨í„´ - ì˜ì¡´ ê°ì²´ë¥¼ ì£¼ì…ë°›ëŠ”ë‹¤. 
+	//			 - ì˜ì¡´ ì£¼ì… ë„êµ¬ë¥¼ ì„ ì–¸í•œë‹¤.(ìƒì„±ì or setter)
 	
-	public Service(Hong hong) { //»ı¼ºÀÚ ÀÇÁ¸ ÁÖÀÔ µµ±¸
+	public Service(Hong hong) { //ìƒì„±ì ì˜ì¡´ ì£¼ì… ë„êµ¬
 		this.hong = hong;
 	}
 	
@@ -21,12 +21,12 @@ public class Service {
 //	}
 	
 	public void doSomething() {
-		//¼­ºñ½º ÀÚ½ÅÀÇ ¾÷¹«
-		System.out.println("ÀÚ·á¸¦ ÃëÇÕ");
+		//ì„œë¹„ìŠ¤ ìì‹ ì˜ ì—…ë¬´
+		System.out.println("ìë£Œë¥¼ ì·¨í•©");
 
-		//ÀÏºÎ ¾÷¹«¸¦ Hong¿¡°Ô À§ÀÓ
-		//service¿Í hongÀº ÀÇÁ¸ °ü°è
-		//ÀÇÁ¸ °´Ã¼¸¦ ½º½º·Î ¸¸µå´Â ¹æ½Ä
+		//ì¼ë¶€ ì—…ë¬´ë¥¼ Hongì—ê²Œ ìœ„ì„
+		//serviceì™€ hongì€ ì˜ì¡´ ê´€ê³„
+		//ì˜ì¡´ ê°ì²´ë¥¼ ìŠ¤ìŠ¤ë¡œ ë§Œë“œëŠ” ë°©ì‹
 //		Hong hong = new Hong();
 //		hong.work();
 		
@@ -39,7 +39,7 @@ public class Service {
 		lee.work();
 		
 		
-		//¼­ºñ½º ÀÚ½ÅÀÇ ¾÷¹«
-		System.out.println("ÀÚ·á¸¦ Àü¼Û");
+		//ì„œë¹„ìŠ¤ ìì‹ ì˜ ì—…ë¬´
+		System.out.println("ìë£Œë¥¼ ì „ì†¡");
 	}
 }

@@ -5,16 +5,16 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 	public static void main(String[] args) {
-		//Á÷Á¢ »ı¼º
+		//ì§ì ‘ ìƒì„±
 		Hong hong1 = new Hong();
 		
-		//½ºÇÁ¸µÀ» ÅëÇØ »ı¼º
-		//½ºÇÁ¸µ ÄÁÅ×ÀÌ³Ê == oo ÄÁÅØ½ºÆ®
-		//org.springframework.context ÆĞÅ°Áö
+		//ìŠ¤í”„ë§ì„ í†µí•´ ìƒì„±
+		//ìŠ¤í”„ë§ ì»¨í…Œì´ë„ˆ == oo ì»¨í…ìŠ¤íŠ¸
+		//org.springframework.context íŒ¨í‚¤ì§€
 //		ApplicationContext context = new ClassPathXmlApplicationContext("/src/main/java/com/test/java/di03/di03.xml"); 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/test/java/di03/di03.xml");
 		
-		//bean 1°³ »ı¼º, new Hong() È£Ãâ
+		//bean 1ê°œ ìƒì„±, new Hong() í˜¸ì¶œ
 		Hong hong2 = (Hong)context.getBean("hong");
 		
 		hong1.work();

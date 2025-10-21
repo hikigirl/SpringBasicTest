@@ -2,6 +2,6 @@ package com.test.java.di01;
 
 public class Lee {
 	public void work() {
-		System.out.println("¾÷¹«¸¦ ÁøÇàÇÕ´Ï´Ù. - Lee");
+		System.out.println("ì—…ë¬´ë¥¼ ì§„í–‰í•©ë‹ˆë‹¤. - Lee");
 	}
 }

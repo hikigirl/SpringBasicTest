@@ -11,43 +11,43 @@ public class Main {
 		m3();
 	}
 	private static void m3() {
-		//ÁÖ ¾÷¹«¸¸ Á¸Àç
-//		Memo memo = new MemoImpl(); //ÀÌ ºÎºĞµµ beanÀ¸·Î ¸¸µé¾î¾ßÇÔ
+		//ì£¼ ì—…ë¬´ë§Œ ì¡´ì¬
+//		Memo memo = new MemoImpl(); //ì´ ë¶€ë¶„ë„ beanìœ¼ë¡œ ë§Œë“¤ì–´ì•¼í•¨
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/test/java/aop/memo.xml");
 		
 		Memo memo = (Memo)context.getBean("memo");
 		
-		memo.memo_add("¸Ş¸ğÀÔ´Ï´Ù.");
+		memo.memo_add("ë©”ëª¨ì…ë‹ˆë‹¤.");
 		try {
 			String content = memo.memo_read("1");
-			System.out.println("ÀĞ±â: " + content);
+			System.out.println("ì½ê¸°: " + content);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println(memo.edit("1", "¼öÁ¤µÈ ¸Ş¸ğ"));
+		System.out.println(memo.edit("1", "ìˆ˜ì •ëœ ë©”ëª¨"));
 		
 		System.out.println(memo.del("1"));
 	}
 	
 	private static void m2() {
-		//¸Ş¸ğÀå ±¸Çö
+		//ë©”ëª¨ì¥ êµ¬í˜„
 		System.out.println("------m2()------\n");
 		Logger logger = new Logger();
 		Memo memo = new MemoImpl();
 		
-		memo.memo_add("¸Ş¸ğÀÔ´Ï´Ù.");
+		memo.memo_add("ë©”ëª¨ì…ë‹ˆë‹¤.");
 		logger.log();
 		
 		try {
 			String content = memo.memo_read("1");
-			System.out.println("ÀĞ±â: " + content);
+			System.out.println("ì½ê¸°: " + content);
 			logger.log();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println(memo.edit("1", "¼öÁ¤µÈ ¸Ş¸ğ"));
+		System.out.println(memo.edit("1", "ìˆ˜ì •ëœ ë©”ëª¨"));
 		logger.log();
 		
 		System.out.println(memo.del("1"));
@@ -55,18 +55,18 @@ public class Main {
 	}
 	
 	private static void m1() {
-		//¸Ş¸ğÀå ±¸Çö
+		//ë©”ëª¨ì¥ êµ¬í˜„
 		Memo memo = new MemoImpl();
 		
-		memo.memo_add("¸Ş¸ğÀÔ´Ï´Ù.");
+		memo.memo_add("ë©”ëª¨ì…ë‹ˆë‹¤.");
 		try {
 			String content = memo.memo_read("1");
-			System.out.println("ÀĞ±â: " + content);
+			System.out.println("ì½ê¸°: " + content);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		
-		System.out.println(memo.edit("1", "¼öÁ¤µÈ ¸Ş¸ğ"));
+		System.out.println(memo.edit("1", "ìˆ˜ì •ëœ ë©”ëª¨"));
 		
 		System.out.println(memo.del("1"));
 	}

@@ -2,51 +2,51 @@ package com.test.java.di01;
 
 public class Main {
 	public static void main(String[] args) {
-		//а╤аВ
-		//Main(╩ГюЕ) - Service(фююЕ) - Hong(фю©Ь)
+		//Л║╟Л╖│
+		//Main(Л┌╛Л·╔) - Service(М▄─Л·╔) - Hong(М▄─Л⌡░)
 		
-		//╟╢ц╪ ╩Щ╪╨ ╪Ь╪╜
+		//Й╟²Л╡╢ Л┐²Л└╠ Л┬°Л└°
 		//1. Hong
 		//2. Service
 		//3. Main
 		
-		//Main -> (ю╖юс) -> Service -> (ю╖юс) -> Hong
-		//Main -> (юга╦) -> Service -> (юга╦) -> Hong
+		//Main -> (Л°└Л·└) -> Service -> (Л°└Л·└) -> Hong
+		//Main -> (Л²≤Л║╢) -> Service -> (Л²≤Л║╢) -> Hong
 		
-		//Hong -> еП╩Г
-		//Lee -> ют╩Г
+		//Hong -> М┤╢Л┌╛
+		//Lee -> Л·┘Л┌╛
 		
-		//Hong╟З Lee╢б ╩Г╤Вю╦╥н╪╜╢б ╢ы╦╔ ╩Г╤В, аВ©Ью╦╥н╪╜╢б ╟╟ю╨ ©╙грю╩ го╢б аВ©Ь
+		//HongЙЁ╪ LeeК┼■ Л┌╛К·▄Л°╪К║°Л└°К┼■ К▀╓К╔╦ Л┌╛К·▄, Л╖│Л⌡░Л°╪К║°Л└°К┼■ Й╟≥Л²─ Л≈╜М∙═Л²└ М∙≤К┼■ Л╖│Л⌡░
 		
-		//***©╘еб╠НаЖюг ╧Ф╫д
-		//гй©Д╥н го╢б юга╦ ╟╢ц╪╦╕ аВа╒ ╩Щ╪╨+╩Г©Кго╢б ╧Ф╫д
+		//***Л≈╛М┐°Й╧▄Л╖─Л²≤ К╟╘Л▀²
+		//М∙└Л ■К║° М∙≤К┼■ Л²≤Л║╢ Й╟²Л╡╢К╔╪ Л╖│Л═▒ Л┐²Л└╠+Л┌╛Л ╘М∙≤К┼■ К╟╘Л▀²
 		
-		//***юлхдюг ╧Ф╫д
-		//гй©Д╥н го╢б юга╦ ╟╢ц╪╦╕ аВа╒ ╩Щ╪╨гоаЖ ╬йю╫
-		//©э╨н╥н╨нем юга╦ ╟╢ц╪╦╕ ажют+╩Г©Кго╢б ╧Ф╫д
+		//***Л²╢М⌡└Л²≤ К╟╘Л▀²
+		//М∙└Л ■К║° М∙≤К┼■ Л²≤Л║╢ Й╟²Л╡╢К╔╪ Л╖│Л═▒ Л┐²Л└╠М∙≤Л╖─ Л∙┼Л²▄
+		//Л≥╦К╤─К║°К╤─М└╟ Л²≤Л║╢ Й╟²Л╡╢К╔╪ Лё╪Л·┘+Л┌╛Л ╘М∙≤К┼■ К╟╘Л▀²
 		
-		System.out.println("╩ГюЕ╬В╧╚1");
+		System.out.println("Л┌╛Л·╔Л≈┘К╛╢1");
 
-		//main╟З service╢б юга╦ ╟Э╟Х
+		//mainЙЁ╪ serviceК┼■ Л²≤Л║╢ Й╢─ЙЁ└
 		//Service service = new Service();
 		//service.doSomething();
 		
-		//Serviceюг юга╦ ╟╢ц╪ Hong
+		//ServiceЛ²≤ Л²≤Л║╢ Й╟²Л╡╢ Hong
 		//Hong hong = new Hong();
 		
-		//Service ╩Щ╪╨ + юга╦ ╟╢ц╪ ажют
-//		Service service = new Service(hong); //юга╦ ажют(DI)
+		//Service Л┐²Л└╠ + Л²≤Л║╢ Й╟²Л╡╢ Лё╪Л·┘
+//		Service service = new Service(hong); //Л²≤Л║╢ Лё╪Л·┘(DI)
 //		service.doSomething();
 		
 //		Service service = new Service();
-//		service.setHong(hong); //юга╦ ажют(DI) ╧ъ╩Щ
+//		service.setHong(hong); //Л²≤Л║╢ Лё╪Л·┘(DI) К╟°Л┐²
 //		service.doSomething();
 		
 		Lee lee = new Lee();
-		Service service = new Service(lee); //юга╦ ажют(DI)
+		Service service = new Service(lee); //Л²≤Л║╢ Лё╪Л·┘(DI)
 		service.doSomething();
 		
-		System.out.println("╩ГюЕ╬В╧╚2");
+		System.out.println("Л┌╛Л·╔Л≈┘К╛╢2");
 		
 	}
 }

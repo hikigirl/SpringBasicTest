@@ -2,6 +2,6 @@ package com.test.java.di01;
 
 public class Hong {
 	public void work() {
-		System.out.println("¾÷¹«¸¦ ÁøÇàÇÕ´Ï´Ù. - Hong");
+		System.out.println("ì—…ë¬´ë¥¼ ì§„í–‰í•©ë‹ˆë‹¤. - Hong");
 	}
 }

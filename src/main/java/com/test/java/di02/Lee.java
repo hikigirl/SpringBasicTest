@@ -2,6 +2,6 @@ package com.test.java.di02;
 
 public class Lee implements Employee {
 	public void work() {
-		System.out.println("¾÷¹«¸¦ ÁøÇàÇÕ´Ï´Ù. - Lee");
+		System.out.println("ì—…ë¬´ë¥¼ ì§„í–‰í•©ë‹ˆë‹¤. - Lee");
 	}
 }

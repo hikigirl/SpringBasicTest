@@ -5,13 +5,13 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Main {
 	public static void main(String[] args) {
-		//±âÁ¸ ÀÛ¾÷ => service¸¦ ÀÇÁ¸ÇØ¼­ service °´Ã¼ »ı¼º
-		//¼ø¼ö ÀÚ¹Ù + DI ±¸Çö
+		//ê¸°ì¡´ ì‘ì—… => serviceë¥¼ ì˜ì¡´í•´ì„œ service ê°ì²´ ìƒì„±
+		//ìˆœìˆ˜ ìë°” + DI êµ¬í˜„
 //		Hong hong = new Hong();
 //		Service service = new Service(hong);
 //		service.doSomething();
 		
-		//½ºÇÁ¸µ + DI ±¸Çö
+		//ìŠ¤í”„ë§ + DI êµ¬í˜„
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/test/java/di04/di04.xml");
 //		Hong hong2 = (Hong)context.getBean("hong");
 //		
